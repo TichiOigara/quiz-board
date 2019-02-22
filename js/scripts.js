@@ -3,11 +3,17 @@ var addResults = function(results){
 };
 
 $(document).ready(function(){
-  $("#form form").submit(function(){
-    var question1 = parseInt($("input:radio[name=question1]:checked").val());
-    var question2 = parseInt($("input:radio[name=question2]:checked").val());
-    alert(question1);
-    alert(question2);
+  $("#form form").submit(function(event){
+    event.preventDefault();
+    var results =[];
+
+    for(var index =0; index<2; index++){
+      results[index]= parseInt($("input:radio[name=question"+(index+1)+"]:checked").val());
+    }
+    // var question1 = parseInt($("input:radio[name=question1]:checked").val());
+    // var question2 = parseInt($("input:radio[name=question2]:checked").val());
+     alert(results);
+    // alert(question2);
   });
 
 });
