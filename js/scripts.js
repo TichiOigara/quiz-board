@@ -18,6 +18,7 @@ $(document).ready(function(){
     }
 
      var totalScore = addResults(results);
+    $("#scoreResult").text(totalScore);
   });
 
 });
