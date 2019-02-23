@@ -10,6 +10,7 @@ html, body {
   width: 100%;
   max-width: 100%;
 }
+
 #homepage {
   background-image: url("../images/black.png");
   background-repeat: no-repeat;
@@ -19,6 +20,7 @@ html, body {
   padding: 20%;
   color:white;
 }
+
 #quizbtn{
   color:#000000;
   background-color: #ffd11a;
@@ -27,9 +29,3 @@ html, body {
 #jsicon {
   width: 100%;
 }
-
-
-
-/* .score{
-  display:none;
-} */
