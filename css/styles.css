@@ -42,20 +42,22 @@ html, body {
   font-weight: normal;
 }
 .radio{
-  display: inline-block;
-  padding:3%;
+  display:block;
+  padding:0;
+  margin:0;
   width:100%;
   font-size: 1.2em;
-
-  background-color: rgba(0, 0, 0, 0.05);
   margin:2% auto;
 }
 .radio label{
+  display: block;
+  padding: 2%;
   width:100%;
   height: 100%;
   display:block;
+  background-color: rgba(0, 0, 0, 0.05);
 }
-.radio:hover{
+.radio label:hover{
   cursor: pointer;
   background-color:#ffd11a;
 
