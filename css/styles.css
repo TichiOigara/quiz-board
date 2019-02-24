@@ -21,11 +21,41 @@ html, body {
   color:white;
 }
 
-#quizbtn{
+.quizbtn{
   color:#000000;
   background-color: #ffd11a;
 }
 
 #jsicon {
   width: 100%;
+}
+#jsheading{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#quiz{
+  background-color:white ;
+}
+.question{
+  font-size: 1.5em;
+  font-weight: normal;
+}
+.radio{
+  display: inline-block;
+  padding:3%;
+  width:100%;
+  font-size: 1.2em;
+
+  background-color: rgba(0, 0, 0, 0.05);
+  margin:2% auto;
+}
+.radio label{
+  width:100%;
+  display:block;
+}
+.radio:hover{
+  cursor: pointer;
+  background-color:#ffd11a;
+
 }
