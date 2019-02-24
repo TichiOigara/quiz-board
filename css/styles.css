@@ -52,10 +52,21 @@ html, body {
 }
 .radio label{
   width:100%;
+  height: 100%;
   display:block;
 }
 .radio:hover{
   cursor: pointer;
   background-color:#ffd11a;
 
+}
+.card{
+  text-align: center;
+}
+
+#scoreboard{
+  display: none;
+}
+.mystyle{
+  margin:5% 20%;
 }
