@@ -1,13 +1,34 @@
 //function for adding total scores.
 var addResults = function(results){
+  //check for NaN values, i.e, non-answered questions
+  var finalResults=[];
+  results.forEach(function(result){
+    if(isNaN(result)){
+      finalResults.push(0);
+    }else{
+      finalResults.push(result);
+    }
+  });
   var totalScore = 0;
-  for(var i = 0; i<results.length; i++){
-    totalScore += results[i];
+  for(var i = 0; i<finalResults.length; i++){
+    totalScore += finalResults[i];
   }
   return totalScore;
 };
 
+var gradeChecker =function(score){
+  var gradeChecker;
+  if(score>=80){
+    gradeChecker ="Congratulations!! You have passed Excellently.";
+  }else if(score>=50){
+    gradeChecker="Good job! You have passed fairly.";
+  }else{
+    gradeChecker = "You have failed. Please try again.";
+  }
+  return gradeChecker;
+};
 $(document).ready(function(){
+
   $("#form form").submit(function(event){
     event.preventDefault();
     //array for storing results
@@ -18,7 +39,19 @@ $(document).ready(function(){
     }
 
      var totalScore = addResults(results);
-    $("#scoreResult").text(totalScore);
+     var grade =gradeChecker(totalScore);
+     $("#scoreResult").text(totalScore);
+     $("#extraInfo").text(grade);
+
+     $("#scoreboard").show();
+     
+     $("#quiz").hide();
+
+
   });
+  $(".quizbtn").click(function(){
+    $("#quiz").show();
+  });
+
 
 });
