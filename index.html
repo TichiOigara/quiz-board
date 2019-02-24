@@ -18,7 +18,7 @@
       <div class="col-sm-10">
         <h1>JavaScript Quiz Board</h1>
         <h4>Test your JavaScript knowledge!</h4>
-        <a href="#quiz" class="btn btn-lg" id="quizbtn">Start Quiz</a>
+        <a href="#quiz" class="btn btn-lg quizbtn" >Start Quiz</a>
       </div>
     </div>
 
@@ -27,68 +27,69 @@
 
       </div>
       <div class="col-sm-6">
+        <h2 id="jsheading">JavaScript Quiz</h2>
         <div id="form">
           <form action="">
 
             <div class="form-group">
-              <label >1. JavaScript is the same as Java.</label>
-              <div class="radio" >
-                <label >
-                <input type="radio" name="question1" value="0">
+              <label class="question" >1. JavaScript is the same as Java.</label>
+              <div class="radio">
+                <label for="a1"  >
+                <input type="radio" id="a1" name="question1" value="0" >
                 True
                 </label>
               </div>
               <div class="radio">
-                <label >
-                <input type="radio" name="question1" value="10">
+                <label for="b1">
+                <input type="radio" id="b1" name="question1" value="10">
                 False
                 </label>
               </div>
             </div>
 
             <div class="form-group">
-              <label>2. Inside which HTML element do we place JavaScript in?</label>
+              <label class="question">2. Inside which HTML element do we place JavaScript in?</label>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question2" value="0">
+                <label for="a2">
+                  <input type="radio" name="question2" value="0" id="a2">
                   &ltscripting&gt
                 </label>
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question2" value="10">
+                <label for="b2">
+                  <input type="radio" id="b2" name="question2" value="10">
                   &ltscript&gt
                 </label>
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question2" value="0">
+                <label  for="c2">
+                  <input type="radio" id="c2" name="question2" value="0">
                   &ltjavascript&gt
                 </label>
               </div>
             </div>
 
             <div class="form-group">
-              <label >
+              <label class="question">
                 3. Where is the correct place to insert JavaScript?
               </label>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question3" value="10">
+                <label  for="a3">
+                  <input type="radio" id="a3" name="question3" value="10">
                   Both &lthead&gt and &ltbody&gt section
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question3" value="0">
+                <label for="b3" >
+                  <input type="radio" id="b3" name="question3" value="0">
                   &lthead&gt
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question3" value="0">
+                <label for="c3">
+                  <input type="radio" id="c3" name="question3" value="0">
                   &ltbody&gt
                 </label>
 
@@ -96,26 +97,26 @@
             </div>
 
             <div class="form-group">
-              <label >
+              <label class="question">
                 4. What is the correct syntax for referring to an external script called "script.js"?
               </label>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question4" value="0">
+                <label for="a4">
+                  <input type="radio" id="a4" name="question4" value="0">
                   &ltscript name = "script.js"&gt
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question4" value="10">
+                <label for="b4">
+                  <input type="radio" id="b4" name="question4" value="10">
                   &ltscript src = "script.js"&gt
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question4" value="0">
+                <label for="c4" >
+                  <input type="radio" id="c4" name="question4" value="0">
                   &ltscript href = "script.js"&gt
                 </label>
 
@@ -123,45 +124,45 @@
             </div>
 
             <div class="form-group">
-              <label >
+              <label class="question">
                 5. External JavaScript file must contain &ltscript&gt tag.
               </label>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question5" value="0">True
+                <label for="a5">
+                  <input type="radio" id="a5" name="question5" value="0">True
                 </label>
 
               </div>
 
               <div class="radio">
-                <label >
-                  <input type="radio" name="question5" value="10">False
+                <label for="b5" >
+                  <input type="radio" name="question5" value="10" id="b5">False
                 </label>
 
               </div>
             </div>
 
             <div class="form-group">
-              <label >
+              <label class="question">
                 6. How do you create a function in JavaScript?
               </label>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question6" value="0">
+                <label for="a6">
+                  <input type="radio" name="question6" value="0" id="a6">
                   function = myFunction()
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question6" value="0">
+                <label for="b6">
+                  <input type="radio" name="question6" value="0" id="b6">
                   function:myFunction()
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question6" value="10">
+                <label for="c6">
+                  <input type="radio" name="question6" value="10" id="c6">
                   function myFunction()
                 </label>
 
@@ -169,26 +170,26 @@
             </div>
 
             <div class="form-group">
-              <label >
+              <label class="question">
                 7. How do you write an IF statement in JavaScript?
               </label>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question7" value="0">
+                <label for="a7">
+                  <input type="radio" name="question7" value="0" id="a7">
                   if i===5
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question7" value="0">
+                <label for="b7">
+                  <input type="radio" name="question7" value="0" id="b7">
                   if (i = 5)
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question7" value="10">
+                <label for="c7">
+                  <input type="radio" name="question7" value="10" id="c7">
                   if (i === 5)
                 </label>
 
@@ -196,26 +197,26 @@
             </div>
 
             <div class="form-group">
-              <label >
+              <label class="question">
                 8. How do you declare a variable in JavaScript?
               </label>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question8" value="0">
+                <label for="a8">
+                  <input type="radio" name="question8" value="0" id="a8">
                   v name;
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question8" value="10">
+                <label for="b8">
+                  <input type="radio" name="question8" value="10" id="b8">
                   var name;
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question8" value="0">
+                <label for="c8">
+                  <input type="radio" name="question8" value="0" id="c8">
                   variable name;
                 </label>
 
@@ -223,26 +224,27 @@
             </div>
 
             <div class="form-group">
-              <label >
+              <label class="question">
                 9. Which operation is used to assign a value to a variable?
               </label>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question9" value="0">
+                <label for="a9">
+                  <input type="radio" name="question9" value="0" id="a9">
                   *
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question9" value="0">
+                <label for="b9">
+                  <input type="radio" name="question9" value="0" id="b9">
                   ==
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question9" value="10">
+                <label for="c9">
+                  <input type="radio" name="question9" value="10"
+                  id="c9">
                   =
                 </label>
 
@@ -250,19 +252,19 @@
             </div>
 
             <div class="form-group">
-              <label >
+              <label class="question">
                 10. Is JavaScript case sensitive?
               </label>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question10" value="10">
+                <label for="a10">
+                  <input type="radio" name="question10" value="10" id="a10">
                   True
                 </label>
 
               </div>
               <div class="radio">
-                <label >
-                  <input type="radio" name="question10" value="0">
+                <label for="b10">
+                  <input type="radio" name="question10" value="0" id="b10">
                   False
                 </label>
 
@@ -270,7 +272,7 @@
 
             </div>
 
-            <button type="submit" class="btn btn-info btn-lg">Submit Values</button>
+            <button type="submit" class="btn quizbtn btn-lg">Submit Values</button>
 
           </form>
         </div>
