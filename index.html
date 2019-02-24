@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="container" >
+  <div class="container">
     <div class="row " id="homepage">
       <div class="col-sm-2">
         <img id="jsicon" src="images/js-icon2.png" alt="">
@@ -18,7 +18,7 @@
       <div class="col-sm-10">
         <h1>JavaScript Quiz Board</h1>
         <h4>Test your JavaScript knowledge!</h4>
-        <a href="#quiz" class="btn btn-lg quizbtn" >Start Quiz</a>
+        <a href="#quiz" class="btn btn-lg quizbtn">Start Quiz</a>
       </div>
     </div>
 
@@ -32,17 +32,17 @@
           <form action="">
 
             <div class="form-group">
-              <label class="question" >1. JavaScript is the same as Java.</label>
+              <label class="question">1. JavaScript is the same as Java.</label>
               <div class="radio">
-                <label for="a1"  >
-                <input type="radio" id="a1" name="question1" value="0" >
-                True
+                <label for="a1">
+                  <input type="radio" id="a1" name="question1" value="0">
+                  True
                 </label>
               </div>
               <div class="radio">
                 <label for="b1">
-                <input type="radio" id="b1" name="question1" value="10">
-                False
+                  <input type="radio" id="b1" name="question1" value="10">
+                  False
                 </label>
               </div>
             </div>
@@ -62,7 +62,7 @@
                 </label>
               </div>
               <div class="radio">
-                <label  for="c2">
+                <label for="c2">
                   <input type="radio" id="c2" name="question2" value="0">
                   &ltjavascript&gt
                 </label>
@@ -74,14 +74,14 @@
                 3. Where is the correct place to insert JavaScript?
               </label>
               <div class="radio">
-                <label  for="a3">
+                <label for="a3">
                   <input type="radio" id="a3" name="question3" value="10">
                   Both &lthead&gt and &ltbody&gt section
                 </label>
 
               </div>
               <div class="radio">
-                <label for="b3" >
+                <label for="b3">
                   <input type="radio" id="b3" name="question3" value="0">
                   &lthead&gt
                 </label>
@@ -115,7 +115,7 @@
 
               </div>
               <div class="radio">
-                <label for="c4" >
+                <label for="c4">
                   <input type="radio" id="c4" name="question4" value="0">
                   &ltscript href = "script.js"&gt
                 </label>
@@ -135,7 +135,7 @@
               </div>
 
               <div class="radio">
-                <label for="b5" >
+                <label for="b5">
                   <input type="radio" name="question5" value="10" id="b5">False
                 </label>
 
@@ -243,8 +243,7 @@
               </div>
               <div class="radio">
                 <label for="c9">
-                  <input type="radio" name="question9" value="10"
-                  id="c9">
+                  <input type="radio" name="question9" value="10" id="c9">
                   =
                 </label>
 
@@ -276,15 +275,31 @@
 
           </form>
         </div>
-        <div class="score">
-          <h2>Your Score is :</h2>
-          <p id="scoreResult"></p>
-        </div>
 
       </div>
       <div class="col-sm-3">
 
       </div>
+    </div>
+
+    <div class="row" id="scoreboard">
+
+      <div class="col-sm-12">
+        <div class="card mystyle">
+          <img src="images/score.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h2 class="card-title">Your Score is</h2>
+            <h4 class="card-text" id="scoreResult">
+
+            </h4>
+            <p id="extraInfo" class="card-text">
+            </p>
+            <a href="#quiz" class="btn btn-lg quizbtn"> Retake Quiz</a>
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
   </div>
