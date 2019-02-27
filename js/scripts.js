@@ -1,3 +1,4 @@
+//business logic
 //function for adding total scores.
 var addResults = function(results){
   //check for NaN values, i.e, non-answered questions
@@ -24,9 +25,11 @@ var gradeChecker =function(score){
     gradeChecker="Good job! You have passed fairly.";
   }else{
     gradeChecker = "You have failed. Please try again.";
+
   }
   return gradeChecker;
 };
+//front-end logic
 $(document).ready(function(){
 
   $("#form form").submit(function(event){
@@ -42,9 +45,13 @@ $(document).ready(function(){
      var grade =gradeChecker(totalScore);
      $("#scoreResult").text(totalScore);
      $("#extraInfo").text(grade);
-
      $("#scoreboard").show();
-     
+     if(totalScore<50){
+       $("#retake").show();
+     }
+     $("#retakequiz").click(function(){
+       location.reload();
+     });
      $("#quiz").hide();
 
 

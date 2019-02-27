@@ -66,9 +66,10 @@ html, body {
   text-align: center;
 }
 
-#scoreboard{
+#scoreboard, #retake{
   display: none;
 }
+
 .mystyle{
   margin:5% 20%;
 }
